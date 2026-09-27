@@ -1,4 +1,4 @@
 interface:
   display_name: "学术文献翻译"
-  short_description: "保留源名称，完整翻译学术文献，提供中英对照、图表公式和本地或在线译文"
-  default_prompt: "使用 $academic-translate 完整翻译我提供的学术文献，保留源名称并按来源位置交付中英对照译文。"
+  short_description: "保留源名称，按当前目录取号交付完整中英对照译文，保留图表公式并关联已核实文档"
+  default_prompt: "使用 $academic-translate 完整翻译我提供的学术文献，保留源名称，按当前目录取号或核实复用已有编号，交付中英对照译文并关联已核实文档，不新增编号状态文件。"
