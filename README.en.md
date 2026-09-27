@@ -33,6 +33,10 @@ Use academic-translate to translate this Lark or Notion paper at the correspondi
 Use academic-translate to resume <existing translation path or link>, preserving my edits and completing only the remaining content.
 ```
 
+```text
+Use academic-translate with LaTeX for all math, including inline formulas. Verify the existing reading document for the same paper, reuse its number, and add navigation to both outputs while preserving my edits.
+```
+
 Hosts supporting that invocation syntax can also use `$academic-translate`. Translation does not rename the source or look up CCF grades, bibliographic dates, or title abbreviations solely for naming. Updating an existing translation does not implicitly rename it either.
 
 ## Output and location
@@ -114,7 +118,7 @@ On Windows, replace the skill path with `C:\Users\<username>\.agents\skills\acad
 
 ### Updates and migration from old versions
 
-This release rebuilds Git history and uses `master` as the default branch. **For the first upgrade from an old clone, preserve local changes, move the old directory outside skill discovery, and clone again using the instructions above.** Review and transfer needed local edits to the new directory; do not copy the old `.git` directory or merge the old history. Papers, translations, and progress belong in task locations and are not replaced when updating skill files.
+Git history was rebuilt previously, with `master` as the default branch. This feature update uses normal commits; clones already based on the new history can use the fast-forward commands below. **Only clones from before the history rebuild need to be replaced: preserve local changes, move the old directory outside skill discovery, and clone again.** Review and transfer needed local edits to the new directory; do not copy the old `.git` directory or merge the old history. Papers, translations, and progress belong in task locations and are not replaced when updating skill files.
 
 After a fresh clone, preserve local changes before routine fast-forward updates:
 
